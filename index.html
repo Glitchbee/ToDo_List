@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/816dbea11f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="todo-app">
+            <header>
+                <h1>ToDo List</h1>
+                <img src="./to-do-list.png" alt="todo-icon" id="icon-todo">
+            </header>
+
+            <div class="input-box">
+                <input onkeydown="keyEvent(event)" type="text" placeholder="add your task" onkeyup="displayAdd()" id="input-task">
+                <img onclick="addTask()" class="add-svg" alt="" id="add-btn">
+            </div>
+
+            <ul class="task-lst" id="task-container"></ul>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
